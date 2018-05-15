@@ -1,0 +1,898 @@
+Scope.geometry: 1577x915+316+1365
+Scope.update.disable: false
+Scope.update.disable_when_icon: true
+Scope.font: java.awt.Font[family=Dialog,name=Dialog,style=plain,size=14]
+
+
+Scope.color_0: Blue,java.awt.Color[r=0,g=0,b=255]
+Scope.color_1: Black,java.awt.Color[r=0,g=0,b=0]
+Scope.color_2: Cyan,java.awt.Color[r=0,g=255,b=255]
+Scope.color_3: Green,java.awt.Color[r=0,g=255,b=0]
+Scope.color_4: Magenta,java.awt.Color[r=255,g=0,b=255]
+Scope.color_5: Orange,java.awt.Color[r=255,g=200,b=0]
+Scope.color_6: Pink,java.awt.Color[r=255,g=175,b=175]
+Scope.color_7: Red,java.awt.Color[r=255,g=0,b=0]
+Scope.color_8: Yellow,java.awt.Color[r=255,g=255,b=0]
+Scope.color_9: DarkGray,java.awt.Color[r=64,g=64,b=64]
+Scope.color_10: Gray,java.awt.Color[r=128,g=128,b=128]
+Scope.color_11: LightGray,java.awt.Color[r=192,g=192,b=192]
+
+Scope.title: "Operations" // $shot// '  '// date_time(getnci(\mraw_ops::vpg_r,'TIME_INSERTED'))
+Scope.data_server_name: MST data Juno
+Scope.data_server_class: MdsDataProvider
+Scope.data_server_argument: juno.physics.wisc.edu
+Scope.fast_network_access: false
+Scope.reversed: false
+
+Scope.global_1_1.experiment: mst
+Scope.global_1_1.event: mst_store_done
+Scope.global_1_1.shot: 0
+Scope.global_1_1.xmax: 100
+Scope.global_1_1.xmin: 0
+Scope.global_1_1.x_label: ' '
+Scope.global_1_1.y_label: ' '
+Scope.global_1_1.horizontal_offset: 0
+Scope.global_1_1.vertical_offset: 0
+
+Scope.columns: 4
+Scope.rows_in_column_1: 8
+
+
+Scope.plot_1_1.height: 100
+Scope.plot_1_1.grid_mode: 0
+Scope.plot_1_1.x_log: false
+Scope.plot_1_1.y_log: false
+Scope.plot_1_1.update_limits: true
+Scope.plot_1_1.palette: Green scale
+Scope.plot_1_1.bitShift: 0
+Scope.plot_1_1.bitClip: false
+Scope.plot_1_1.event: ops_done
+Scope.plot_1_1.num_expr: 1
+Scope.plot_1_1.num_shot: 1
+Scope.plot_1_1.ymin: 0
+Scope.plot_1_1.ymax: 4
+Scope.plot_1_1.title: 'Pinch parameter - Theta' //$shot
+Scope.plot_1_1.global_defaults: 16257
+Scope.plot_1_1.x_expr_1: dim_of(\mst_ops::theta)*1000
+Scope.plot_1_1.y_expr_1: \mst_ops::theta
+Scope.plot_1_1.mode_1D_1_1: Line
+Scope.plot_1_1.mode_2D_1_1: xz(y)
+Scope.plot_1_1.color_1_1: 0
+Scope.plot_1_1.marker_1_1: 0
+Scope.plot_1_1.step_marker_1_1: 1
+
+
+Scope.plot_2_1.height: 100
+Scope.plot_2_1.grid_mode: 0
+Scope.plot_2_1.x_log: false
+Scope.plot_2_1.y_log: false
+Scope.plot_2_1.update_limits: true
+Scope.plot_2_1.palette: Green scale
+Scope.plot_2_1.bitShift: 0
+Scope.plot_2_1.bitClip: false
+Scope.plot_2_1.event: ops_done
+Scope.plot_2_1.num_expr: 1
+Scope.plot_2_1.num_shot: 1
+Scope.plot_2_1.ymax: maxval(_Ip)*1.10
+Scope.plot_2_1.title: 'Ip' //$shot// ' max=' // trim(adjustl(int(maxval(_Ip = \mst_ops::ip)))) // ' kA'
+Scope.plot_2_1.global_defaults: 16257
+Scope.plot_2_1.x_expr_1: dim_of(_Ip)*1000.
+Scope.plot_2_1.y_expr_1: _Ip
+Scope.plot_2_1.mode_1D_1_1: Line
+Scope.plot_2_1.mode_2D_1_1: xz(y)
+Scope.plot_2_1.color_1_1: 0
+Scope.plot_2_1.marker_1_1: 0
+Scope.plot_2_1.step_marker_1_1: 1
+
+
+Scope.plot_3_1.height: 100
+Scope.plot_3_1.grid_mode: 0
+Scope.plot_3_1.x_log: false
+Scope.plot_3_1.y_log: false
+Scope.plot_3_1.update_limits: true
+Scope.plot_3_1.palette: Green scale
+Scope.plot_3_1.bitShift: 0
+Scope.plot_3_1.bitClip: false
+Scope.plot_3_1.event: ops_done
+Scope.plot_3_1.num_expr: 2
+Scope.plot_3_1.num_shot: 1
+Scope.plot_3_1.ymin: 0
+Scope.plot_3_1.title: 'Ipri' //$shot// ' max=' // trim(adjustl(int(maxval(\mst_ops::ipri))))// ' kA'
+Scope.plot_3_1.global_defaults: 49025
+Scope.plot_3_1.x_expr_1: dim_of(\mst_ops::ipri)*1000
+Scope.plot_3_1.y_expr_1: \mst_ops::ipri
+Scope.plot_3_1.mode_1D_1_1: Line
+Scope.plot_3_1.mode_2D_1_1: xz(y)
+Scope.plot_3_1.color_1_1: 0
+Scope.plot_3_1.marker_1_1: 0
+Scope.plot_3_1.step_marker_1_1: 1
+Scope.plot_3_1.x_expr_2: dim_of(\mst_ops::ipri)*1000
+Scope.plot_3_1.y_expr_2: [40,40]
+Scope.plot_3_1.mode_1D_2_1: Line
+Scope.plot_3_1.mode_2D_2_1: xz(y)
+Scope.plot_3_1.color_2_1: 7
+Scope.plot_3_1.marker_2_1: 0
+Scope.plot_3_1.step_marker_2_1: 1
+
+
+Scope.plot_4_1.height: 100
+Scope.plot_4_1.grid_mode: 0
+Scope.plot_4_1.x_log: false
+Scope.plot_4_1.y_log: false
+Scope.plot_4_1.update_limits: true
+Scope.plot_4_1.palette: Green scale
+Scope.plot_4_1.bitShift: 0
+Scope.plot_4_1.bitClip: false
+Scope.plot_4_1.event: ops_done
+Scope.plot_4_1.num_expr: 1
+Scope.plot_4_1.num_shot: 1
+Scope.plot_4_1.title: 'Core flux max=' // CVT(maxval(\mst_ops::flux_f),'123456789')// ' Wb'
+Scope.plot_4_1.global_defaults: 65409
+Scope.plot_4_1.x_expr_1: dim_of(\mst_ops::flux_f)*1000
+Scope.plot_4_1.y_expr_1: \mst_ops::flux_f
+Scope.plot_4_1.mode_1D_1_1: Line
+Scope.plot_4_1.mode_2D_1_1: xz(y)
+Scope.plot_4_1.color_1_1: 0
+Scope.plot_4_1.marker_1_1: 0
+Scope.plot_4_1.step_marker_1_1: 1
+
+
+Scope.plot_5_1.height: 100
+Scope.plot_5_1.grid_mode: 0
+Scope.plot_5_1.x_log: false
+Scope.plot_5_1.y_log: false
+Scope.plot_5_1.update_limits: true
+Scope.plot_5_1.palette: Green scale
+Scope.plot_5_1.bitShift: 0
+Scope.plot_5_1.bitClip: false
+Scope.plot_5_1.event: ops_done
+Scope.plot_5_1.num_expr: 1
+Scope.plot_5_1.num_shot: 1
+Scope.plot_5_1.title: 'Poloidal Gap Voltage (V)' //$shot
+Scope.plot_5_1.global_defaults: 65409
+Scope.plot_5_1.x_expr_1: dim_of(\mst_ops::vpg_f)*1000
+Scope.plot_5_1.y_expr_1: \mst_ops::vpg_f
+Scope.plot_5_1.mode_1D_1_1: Line
+Scope.plot_5_1.mode_2D_1_1: xz(y)
+Scope.plot_5_1.color_1_1: 0
+Scope.plot_5_1.marker_1_1: 0
+Scope.plot_5_1.step_marker_1_1: 1
+
+
+Scope.plot_6_1.height: 100
+Scope.plot_6_1.grid_mode: 0
+Scope.plot_6_1.x_log: false
+Scope.plot_6_1.y_log: false
+Scope.plot_6_1.update_limits: true
+Scope.plot_6_1.palette: Green scale
+Scope.plot_6_1.bitShift: 0
+Scope.plot_6_1.bitClip: false
+Scope.plot_6_1.event: ops_done
+Scope.plot_6_1.num_expr: 1
+Scope.plot_6_1.num_shot: 1
+Scope.plot_6_1.ymin: 0
+Scope.plot_6_1.ymax: 1
+Scope.plot_6_1.title: 'IMA CIII'//$shot
+Scope.plot_6_1.global_defaults: 16257
+Scope.plot_6_1.x_expr_1: dim_of(\mraw_ops::ima_ciii)*1000
+Scope.plot_6_1.y_expr_1: \mraw_ops::ima_ciii
+Scope.plot_6_1.mode_1D_1_1: Line
+Scope.plot_6_1.mode_2D_1_1: xz(y)
+Scope.plot_6_1.color_1_1: 0
+Scope.plot_6_1.marker_1_1: 0
+Scope.plot_6_1.step_marker_1_1: 1
+
+
+Scope.plot_7_1.height: 100
+Scope.plot_7_1.grid_mode: 0
+Scope.plot_7_1.x_log: false
+Scope.plot_7_1.y_log: false
+Scope.plot_7_1.update_limits: true
+Scope.plot_7_1.palette: Green scale
+Scope.plot_7_1.bitShift: 0
+Scope.plot_7_1.bitClip: false
+Scope.plot_7_1.event: ops_done
+Scope.plot_7_1.num_expr: 1
+Scope.plot_7_1.num_shot: 1
+Scope.plot_7_1.ymax: 1.5
+Scope.plot_7_1.title: 'IMA CV' //$shot
+Scope.plot_7_1.global_defaults: 32641
+Scope.plot_7_1.x_expr_1: dim_of(\mraw_ops::ima_cv)*1000
+Scope.plot_7_1.y_expr_1: \mraw_ops::ima_cv
+Scope.plot_7_1.mode_1D_1_1: Line
+Scope.plot_7_1.mode_2D_1_1: xz(y)
+Scope.plot_7_1.color_1_1: 0
+Scope.plot_7_1.marker_1_1: 0
+Scope.plot_7_1.step_marker_1_1: 1
+
+
+Scope.plot_8_1.height: 100
+Scope.plot_8_1.grid_mode: 0
+Scope.plot_8_1.x_log: false
+Scope.plot_8_1.y_log: false
+Scope.plot_8_1.update_limits: true
+Scope.plot_8_1.palette: Green scale
+Scope.plot_8_1.bitShift: 0
+Scope.plot_8_1.bitClip: false
+Scope.plot_8_1.event: ops_done
+Scope.plot_8_1.num_expr: 1
+Scope.plot_8_1.num_shot: 1
+Scope.plot_8_1.ymax: 1.0
+Scope.plot_8_1.title: 'IMA NIV' //$shot
+Scope.plot_8_1.global_defaults: 32641
+Scope.plot_8_1.x_expr_1: dim_of(\mraw_ops::ima_niv)*1000
+Scope.plot_8_1.y_expr_1: \mraw_ops::ima_niv
+Scope.plot_8_1.mode_1D_1_1: Line
+Scope.plot_8_1.mode_2D_1_1: xz(y)
+Scope.plot_8_1.color_1_1: 0
+Scope.plot_8_1.marker_1_1: 0
+Scope.plot_8_1.step_marker_1_1: 1
+Scope.rows_in_column_2: 8
+
+
+Scope.plot_1_2.height: 100
+Scope.plot_1_2.grid_mode: 0
+Scope.plot_1_2.x_log: false
+Scope.plot_1_2.y_log: false
+Scope.plot_1_2.update_limits: true
+Scope.plot_1_2.palette: Green scale
+Scope.plot_1_2.bitShift: 0
+Scope.plot_1_2.bitClip: false
+Scope.plot_1_2.event: ops_done
+Scope.plot_1_2.num_expr: 1
+Scope.plot_1_2.num_shot: 1
+Scope.plot_1_2.ymin: -0.5
+Scope.plot_1_2.ymax: 0
+Scope.plot_1_2.title: _f=\mst_ops::f,'Reversal parameter - F' //$shot
+Scope.plot_1_2.global_defaults: 65409
+Scope.plot_1_2.x_expr_1: dim_of(_f)*1000
+Scope.plot_1_2.y_expr_1: _f
+Scope.plot_1_2.mode_1D_1_1: Line
+Scope.plot_1_2.mode_2D_1_1: xz(y)
+Scope.plot_1_2.color_1_1: 0
+Scope.plot_1_2.marker_1_1: 0
+Scope.plot_1_2.step_marker_1_1: 1
+
+
+Scope.plot_2_2.height: 100
+Scope.plot_2_2.grid_mode: 0
+Scope.plot_2_2.x_log: false
+Scope.plot_2_2.y_log: false
+Scope.plot_2_2.update_limits: true
+Scope.plot_2_2.palette: Green scale
+Scope.plot_2_2.bitShift: 0
+Scope.plot_2_2.bitClip: false
+Scope.plot_2_2.event: ops_done
+Scope.plot_2_2.num_expr: 1
+Scope.plot_2_2.num_shot: 1
+Scope.plot_2_2.title: 'Toroidal field at wall(G) ' //$shot
+Scope.plot_2_2.global_defaults: 196481
+Scope.plot_2_2.x_expr_1: dim_of(\mst_ops::btw)*1000
+Scope.plot_2_2.y_expr_1: \mst_ops::btw
+Scope.plot_2_2.mode_1D_1_1: Line
+Scope.plot_2_2.mode_2D_1_1: xz(y)
+Scope.plot_2_2.color_1_1: 0
+Scope.plot_2_2.marker_1_1: 0
+Scope.plot_2_2.step_marker_1_1: 1
+
+
+Scope.plot_3_2.height: 100
+Scope.plot_3_2.grid_mode: 0
+Scope.plot_3_2.x_log: false
+Scope.plot_3_2.y_log: false
+Scope.plot_3_2.update_limits: true
+Scope.plot_3_2.palette: Green scale
+Scope.plot_3_2.bitShift: 0
+Scope.plot_3_2.bitClip: false
+Scope.plot_3_2.event: ops_done
+Scope.plot_3_2.num_expr: 1
+Scope.plot_3_2.num_shot: 1
+Scope.plot_3_2.title: 'Average toroidal field(G)' //$shot
+Scope.plot_3_2.global_defaults: 65409
+Scope.plot_3_2.x_expr_1: dim_of(\mst_ops::btave)*1000
+Scope.plot_3_2.y_expr_1: \mst_ops::btave
+Scope.plot_3_2.mode_1D_1_1: Line
+Scope.plot_3_2.mode_2D_1_1: xz(y)
+Scope.plot_3_2.color_1_1: 0
+Scope.plot_3_2.marker_1_1: 0
+Scope.plot_3_2.step_marker_1_1: 1
+
+
+Scope.plot_4_2.height: 100
+Scope.plot_4_2.grid_mode: 0
+Scope.plot_4_2.x_log: false
+Scope.plot_4_2.y_log: false
+Scope.plot_4_2.update_limits: true
+Scope.plot_4_2.palette: Green scale
+Scope.plot_4_2.bitShift: 0
+Scope.plot_4_2.bitClip: false
+Scope.plot_4_2.event: ops_done
+Scope.plot_4_2.num_expr: 2
+Scope.plot_4_2.num_shot: 1
+Scope.plot_4_2.title: 'Vtot(V)' //$shot// ' min*80=' // CVT(_vtot_min=minval(_vtot=\mst_ops::vtot*.08),"123456789")// 'kV'
+Scope.plot_4_2.global_defaults: 65409
+Scope.plot_4_2.x_expr_1: dim_of(_vtot)*1000
+Scope.plot_4_2.y_expr_1: _vtot
+Scope.plot_4_2.mode_1D_1_1: Line
+Scope.plot_4_2.mode_2D_1_1: xz(y)
+Scope.plot_4_2.color_1_1: 0
+Scope.plot_4_2.marker_1_1: 0
+Scope.plot_4_2.step_marker_1_1: 1
+Scope.plot_4_2.x_expr_2: [-10,100]
+Scope.plot_4_2.y_expr_2: [-6.0,-6.0]
+Scope.plot_4_2.mode_1D_2_1: Line
+Scope.plot_4_2.mode_2D_2_1: xz(y)
+Scope.plot_4_2.color_2_1: 7
+Scope.plot_4_2.marker_2_1: 0
+Scope.plot_4_2.step_marker_2_1: 1
+
+
+Scope.plot_5_2.height: 100
+Scope.plot_5_2.grid_mode: 0
+Scope.plot_5_2.x_log: false
+Scope.plot_5_2.y_log: false
+Scope.plot_5_2.update_limits: true
+Scope.plot_5_2.palette: Green scale
+Scope.plot_5_2.bitShift: 0
+Scope.plot_5_2.bitClip: false
+Scope.plot_5_2.event: ops_done
+Scope.plot_5_2.num_expr: 1
+Scope.plot_5_2.num_shot: 1
+Scope.plot_5_2.title: 'Toroidal Gap Voltage (V)' //$shot
+Scope.plot_5_2.global_defaults: 65409
+Scope.plot_5_2.x_expr_1: dim_of(\mst_ops::vtg)*1000
+Scope.plot_5_2.y_expr_1: smooth1d(\mst_ops::vtg,10)
+Scope.plot_5_2.mode_1D_1_1: Line
+Scope.plot_5_2.mode_2D_1_1: xz(y)
+Scope.plot_5_2.color_1_1: 0
+Scope.plot_5_2.marker_1_1: 0
+Scope.plot_5_2.step_marker_1_1: 1
+
+
+Scope.plot_6_2.height: 100
+Scope.plot_6_2.grid_mode: 0
+Scope.plot_6_2.x_log: false
+Scope.plot_6_2.y_log: false
+Scope.plot_6_2.update_limits: true
+Scope.plot_6_2.palette: Green scale
+Scope.plot_6_2.bitShift: 0
+Scope.plot_6_2.bitClip: false
+Scope.plot_6_2.event: ops_done
+Scope.plot_6_2.num_expr: 1
+Scope.plot_6_2.num_shot: 1
+Scope.plot_6_2.ymax: 0.005
+Scope.plot_6_2.title: 'IMA OIV'//$shot
+Scope.plot_6_2.global_defaults: 32641
+Scope.plot_6_2.x_expr_1: dim_of(\mraw_ops::ima_oiv)*1000
+Scope.plot_6_2.y_expr_1: \mraw_ops::ima_oiv
+Scope.plot_6_2.mode_1D_1_1: Line
+Scope.plot_6_2.mode_2D_1_1: xz(y)
+Scope.plot_6_2.color_1_1: 0
+Scope.plot_6_2.marker_1_1: 0
+Scope.plot_6_2.step_marker_1_1: 1
+
+
+Scope.plot_7_2.height: 100
+Scope.plot_7_2.grid_mode: 0
+Scope.plot_7_2.x_log: false
+Scope.plot_7_2.y_log: false
+Scope.plot_7_2.update_limits: true
+Scope.plot_7_2.palette: Green scale
+Scope.plot_7_2.bitShift: 0
+Scope.plot_7_2.bitClip: false
+Scope.plot_7_2.event: ops_done
+Scope.plot_7_2.num_expr: 1
+Scope.plot_7_2.num_shot: 1
+Scope.plot_7_2.ymax: 5.0
+Scope.plot_7_2.title: 'IMA BIV'//$shot
+Scope.plot_7_2.global_defaults: 32641
+Scope.plot_7_2.x_expr_1: dim_of(\mraw_ops::ima_biv)*1000
+Scope.plot_7_2.y_expr_1: \mraw_ops::ima_biv
+Scope.plot_7_2.mode_1D_1_1: Line
+Scope.plot_7_2.mode_2D_1_1: xz(y)
+Scope.plot_7_2.color_1_1: 0
+Scope.plot_7_2.marker_1_1: 0
+Scope.plot_7_2.step_marker_1_1: 1
+
+
+Scope.plot_8_2.height: 100
+Scope.plot_8_2.grid_mode: 0
+Scope.plot_8_2.x_log: false
+Scope.plot_8_2.y_log: false
+Scope.plot_8_2.update_limits: true
+Scope.plot_8_2.palette: Green scale
+Scope.plot_8_2.bitShift: 0
+Scope.plot_8_2.bitClip: false
+Scope.plot_8_2.event: ops_done
+Scope.plot_8_2.num_expr: 2
+Scope.plot_8_2.num_shot: 1
+Scope.plot_8_2.ymin: 0
+Scope.plot_8_2.ymax: 1.5
+Scope.plot_8_2.title: 'SXR Be1 & Be2' //$shot
+Scope.plot_8_2.global_defaults: 49025
+Scope.plot_8_2.x_expr_1: 1000*dim_of(_sxr2)
+Scope.plot_8_2.y_expr_1: _sxr2=-\mraw_ops::sxr_be2_l,_sxr2-mean(_sxr2[-1:0])
+Scope.plot_8_2.mode_1D_1_1: Noline
+Scope.plot_8_2.mode_2D_1_1: xz(y)
+Scope.plot_8_2.color_1_1: 0
+Scope.plot_8_2.marker_1_1: 5
+Scope.plot_8_2.step_marker_1_1: 1
+Scope.plot_8_2.x_expr_2: 1000*dim_of(_sxr1)
+Scope.plot_8_2.y_expr_2: _sxr1=-\mraw_ops::sxr_be1_l,_sxr1-mean(_sxr1[-1:0])
+Scope.plot_8_2.mode_1D_2_1: Noline
+Scope.plot_8_2.mode_2D_2_1: xz(y)
+Scope.plot_8_2.color_2_1: 7
+Scope.plot_8_2.marker_2_1: 5
+Scope.plot_8_2.step_marker_2_1: 1
+Scope.rows_in_column_3: 8
+
+
+Scope.plot_1_3.height: 100
+Scope.plot_1_3.grid_mode: 0
+Scope.plot_1_3.y_label: ' '
+Scope.plot_1_3.x_log: false
+Scope.plot_1_3.y_log: false
+Scope.plot_1_3.update_limits: true
+Scope.plot_1_3.palette: Green scale
+Scope.plot_1_3.bitShift: 0
+Scope.plot_1_3.bitClip: false
+Scope.plot_1_3.event: n_co2_done
+Scope.plot_1_3.num_expr: 3
+Scope.plot_1_3.num_shot: 1
+Scope.plot_1_3.ymin: 0
+Scope.plot_1_3.ymax: 2
+Scope.plot_1_3.xmin: -20
+Scope.plot_1_3.xmax: 100
+Scope.plot_1_3.title: 'Density/1e13' //$shot
+Scope.plot_1_3.global_defaults: 14209
+Scope.plot_1_3.x_expr_1: dim_of(\mst_ops::n_co2)*1000
+Scope.plot_1_3.y_expr_1: \mst_ops::n_co2/1e13
+Scope.plot_1_3.mode_1D_1_1: Line
+Scope.plot_1_3.mode_2D_1_1: xz(y)
+Scope.plot_1_3.color_1_1: 0
+Scope.plot_1_3.marker_1_1: 0
+Scope.plot_1_3.step_marker_1_1: 1
+Scope.plot_1_3.x_expr_2: [0,100]
+Scope.plot_1_3.y_expr_2: _n_high = [0.55,0.55]
+Scope.plot_1_3.mode_1D_2_1: Line
+Scope.plot_1_3.mode_2D_2_1: xz(y)
+Scope.plot_1_3.color_2_1: 7
+Scope.plot_1_3.marker_2_1: 0
+Scope.plot_1_3.step_marker_2_1: 1
+Scope.plot_1_3.x_expr_3: [0,100]
+Scope.plot_1_3.y_expr_3: _n_low = [0.45,0.45]
+Scope.plot_1_3.mode_1D_3_1: Line
+Scope.plot_1_3.mode_2D_3_1: xz(y)
+Scope.plot_1_3.color_3_1: 7
+Scope.plot_1_3.marker_3_1: 0
+Scope.plot_1_3.step_marker_3_1: 1
+
+
+Scope.plot_2_3.height: 100
+Scope.plot_2_3.grid_mode: 0
+Scope.plot_2_3.x_log: false
+Scope.plot_2_3.y_log: false
+Scope.plot_2_3.update_limits: true
+Scope.plot_2_3.palette: Green scale
+Scope.plot_2_3.bitShift: 0
+Scope.plot_2_3.bitClip: false
+Scope.plot_2_3.event: ops_done
+Scope.plot_2_3.num_expr: 1
+Scope.plot_2_3.num_shot: 1
+Scope.plot_2_3.xmin: -20
+Scope.plot_2_3.xmax: 100
+Scope.plot_2_3.title: 'H2 neutral pressure (mtorr)' //$shot
+Scope.plot_2_3.global_defaults: 65409
+Scope.plot_2_3.x_expr_1: dim_of(\mst_ops::press)*1000
+Scope.plot_2_3.y_expr_1: \mst_ops::press
+Scope.plot_2_3.mode_1D_1_1: Line
+Scope.plot_2_3.mode_2D_1_1: xz(y)
+Scope.plot_2_3.color_1_1: 0
+Scope.plot_2_3.marker_1_1: 0
+Scope.plot_2_3.step_marker_1_1: 1
+
+
+Scope.plot_3_3.height: 100
+Scope.plot_3_3.grid_mode: 0
+Scope.plot_3_3.x_log: false
+Scope.plot_3_3.y_log: false
+Scope.plot_3_3.update_limits: true
+Scope.plot_3_3.palette: Green scale
+Scope.plot_3_3.bitShift: 0
+Scope.plot_3_3.bitClip: false
+Scope.plot_3_3.event: ops_done
+Scope.plot_3_3.num_expr: 1
+Scope.plot_3_3.num_shot: 1
+Scope.plot_3_3.ymin: 0
+Scope.plot_3_3.ymax: 10
+Scope.plot_3_3.xmin: -20
+Scope.plot_3_3.xmax: 100
+Scope.plot_3_3.title: 'Gas Puff Control' //$shot
+Scope.plot_3_3.global_defaults: 12161
+Scope.plot_3_3.x_expr_1: [-20,-15,-10,-5,0,5,10,15,20,25,30,35,40,45,50,55,60,70,80,90,100]
+Scope.plot_3_3.y_expr_1: _puff=\mst_control::top.gaspuff
+Scope.plot_3_3.mode_1D_1_1: Step
+Scope.plot_3_3.mode_2D_1_1: xz(y)
+Scope.plot_3_3.color_1_1: 0
+Scope.plot_3_3.marker_1_1: 0
+Scope.plot_3_3.step_marker_1_1: 1
+
+
+Scope.plot_4_3.height: 100
+Scope.plot_4_3.grid_mode: 0
+Scope.plot_4_3.x_log: false
+Scope.plot_4_3.y_log: false
+Scope.plot_4_3.update_limits: true
+Scope.plot_4_3.palette: Green scale
+Scope.plot_4_3.bitShift: 0
+Scope.plot_4_3.bitClip: false
+Scope.plot_4_3.event: ops_done
+Scope.plot_4_3.num_expr: 2
+Scope.plot_4_3.num_shot: 1
+Scope.plot_4_3.ymin: 0
+Scope.plot_4_3.ymax: 7
+Scope.plot_4_3.title: 'Alpha parameter' //$shot
+Scope.plot_4_3.global_defaults: 16257
+Scope.plot_4_3.x_expr_1: dim_of(_alpha)*1000
+Scope.plot_4_3.y_expr_1: _alpha=\mst_ops::alpha_par
+Scope.plot_4_3.mode_1D_1_1: Line
+Scope.plot_4_3.mode_2D_1_1: xz(y)
+Scope.plot_4_3.color_1_1: 0
+Scope.plot_4_3.marker_1_1: 0
+Scope.plot_4_3.step_marker_1_1: 1
+Scope.plot_4_3.x_expr_2: dim_of(_lam0)*1000
+Scope.plot_4_3.y_expr_2: _lam0 = \mst_ops::lam0_par
+Scope.plot_4_3.mode_1D_2_1: Line
+Scope.plot_4_3.mode_2D_2_1: xz(y)
+Scope.plot_4_3.color_2_1: 1
+Scope.plot_4_3.marker_2_1: 0
+Scope.plot_4_3.step_marker_2_1: 1
+
+
+Scope.plot_5_3.height: 100
+Scope.plot_5_3.grid_mode: 0
+Scope.plot_5_3.x_log: false
+Scope.plot_5_3.y_log: false
+Scope.plot_5_3.update_limits: true
+Scope.plot_5_3.palette: Green scale
+Scope.plot_5_3.bitShift: 0
+Scope.plot_5_3.bitClip: false
+Scope.plot_5_3.event: ops_done
+Scope.plot_5_3.num_expr: 4
+Scope.plot_5_3.num_shot: 1
+Scope.plot_5_3.ymin: 0
+Scope.plot_5_3.ymax: 50
+Scope.plot_5_3.title: 'Core mode rotation (km/s)'//$shot
+Scope.plot_5_3.global_defaults: 16257
+Scope.plot_5_3.x_expr_1: dim_of(_v05)*1000
+Scope.plot_5_3.y_expr_1: _npts=50,_v05 = \bt_n05_vel, smooth1d(_v05,_npts)
+Scope.plot_5_3.mode_1D_1_1: Line
+Scope.plot_5_3.mode_2D_1_1: xz(y)
+Scope.plot_5_3.color_1_1: 7
+Scope.plot_5_3.marker_1_1: 0
+Scope.plot_5_3.step_marker_1_1: 1
+Scope.plot_5_3.x_expr_2: dim_of(_v06)*1000
+Scope.plot_5_3.y_expr_2: _v06 = \bt_n06_vel, smooth1d(_v06,_npts)
+Scope.plot_5_3.mode_1D_2_1: Line
+Scope.plot_5_3.mode_2D_2_1: xz(y)
+Scope.plot_5_3.color_2_1: 6
+Scope.plot_5_3.marker_2_1: 0
+Scope.plot_5_3.step_marker_2_1: 1
+Scope.plot_5_3.x_expr_3: dim_of(_v07)*1000
+Scope.plot_5_3.y_expr_3: _v07 = \bt_n07_vel, smooth1d(_v07,_npts)
+Scope.plot_5_3.mode_1D_3_1: Line
+Scope.plot_5_3.mode_2D_3_1: xz(y)
+Scope.plot_5_3.color_3_1: 2
+Scope.plot_5_3.marker_3_1: 0
+Scope.plot_5_3.step_marker_3_1: 1
+Scope.plot_5_3.x_expr_4: dim_of(_v08)*1000
+Scope.plot_5_3.y_expr_4: _v08 = \bt_n08_vel, smooth1d(_v08,_npts)
+Scope.plot_5_3.mode_1D_4_1: Line
+Scope.plot_5_3.mode_2D_4_1: xz(y)
+Scope.plot_5_3.color_4_1: 0
+Scope.plot_5_3.marker_4_1: 0
+Scope.plot_5_3.step_marker_4_1: 1
+
+
+Scope.plot_6_3.height: 100
+Scope.plot_6_3.grid_mode: 0
+Scope.plot_6_3.x_log: false
+Scope.plot_6_3.y_log: false
+Scope.plot_6_3.update_limits: true
+Scope.plot_6_3.palette: Green scale
+Scope.plot_6_3.bitShift: 0
+Scope.plot_6_3.bitClip: false
+Scope.plot_6_3.event: torarr_done
+Scope.plot_6_3.num_expr: 4
+Scope.plot_6_3.num_shot: 1
+Scope.plot_6_3.ymax: 30
+Scope.plot_6_3.title: 'Core mode amplitudes' //$shot
+Scope.plot_6_3.global_defaults: 65409
+Scope.plot_6_3.x_expr_1: dim_of(_n05)*1000
+Scope.plot_6_3.y_expr_1: _npts=50,_n05 = \bt_n05_amp, smooth1d(_n05,_npts)
+Scope.plot_6_3.mode_1D_1_1: Line
+Scope.plot_6_3.mode_2D_1_1: xz(y)
+Scope.plot_6_3.color_1_1: 7
+Scope.plot_6_3.marker_1_1: 0
+Scope.plot_6_3.step_marker_1_1: 1
+Scope.plot_6_3.x_expr_2: dim_of(_n06)*1000
+Scope.plot_6_3.y_expr_2: _n06 = \bt_n06_amp, smooth1d(_n06,_npts)
+Scope.plot_6_3.mode_1D_2_1: Line
+Scope.plot_6_3.mode_2D_2_1: xz(y)
+Scope.plot_6_3.color_2_1: 6
+Scope.plot_6_3.marker_2_1: 0
+Scope.plot_6_3.step_marker_2_1: 1
+Scope.plot_6_3.x_expr_3: dim_of(_n07)*1000
+Scope.plot_6_3.y_expr_3: _n07 = \bt_n07_amp, smooth1d(_n07,_npts)
+Scope.plot_6_3.mode_1D_3_1: Line
+Scope.plot_6_3.mode_2D_3_1: xz(y)
+Scope.plot_6_3.color_3_1: 2
+Scope.plot_6_3.marker_3_1: 0
+Scope.plot_6_3.step_marker_3_1: 1
+Scope.plot_6_3.x_expr_4: dim_of(_n08)*1000
+Scope.plot_6_3.y_expr_4: _n08 = \bt_n08_amp, smooth1d(_n08,_npts)
+Scope.plot_6_3.mode_1D_4_1: Line
+Scope.plot_6_3.mode_2D_4_1: xz(y)
+Scope.plot_6_3.color_4_1: 0
+Scope.plot_6_3.marker_4_1: 0
+Scope.plot_6_3.step_marker_4_1: 1
+
+
+Scope.plot_7_3.height: 100
+Scope.plot_7_3.grid_mode: 0
+Scope.plot_7_3.x_log: false
+Scope.plot_7_3.y_log: false
+Scope.plot_7_3.update_limits: true
+Scope.plot_7_3.palette: Green scale
+Scope.plot_7_3.bitShift: 0
+Scope.plot_7_3.bitClip: false
+Scope.plot_7_3.event: torarr_done
+Scope.plot_7_3.num_expr: 1
+Scope.plot_7_3.num_shot: 1
+Scope.plot_7_3.ymin: -20
+Scope.plot_7_3.ymax: 20
+Scope.plot_7_3.title: 'm=0 Br' //$shot
+Scope.plot_7_3.global_defaults: 16257
+Scope.plot_7_3.x_expr_1: dim_of(_br_0)*1000
+Scope.plot_7_3.y_expr_1: _br_0=\br_m0_000
+Scope.plot_7_3.mode_1D_1_1: Line
+Scope.plot_7_3.mode_2D_1_1: xz(y)
+Scope.plot_7_3.color_1_1: 0
+Scope.plot_7_3.marker_1_1: 0
+Scope.plot_7_3.step_marker_1_1: 1
+
+
+Scope.plot_8_3.height: 100
+Scope.plot_8_3.grid_mode: 0
+Scope.plot_8_3.x_log: false
+Scope.plot_8_3.y_log: false
+Scope.plot_8_3.update_limits: true
+Scope.plot_8_3.palette: Green scale
+Scope.plot_8_3.bitShift: 0
+Scope.plot_8_3.bitClip: false
+Scope.plot_8_3.event: torarr_done
+Scope.plot_8_3.num_expr: 2
+Scope.plot_8_3.num_shot: 1
+Scope.plot_8_3.ymin: -20
+Scope.plot_8_3.ymax: 20
+Scope.plot_8_3.title: 'horiz & vert m=1 Br (cos,sin)' //$shot
+Scope.plot_8_3.global_defaults: 16257
+Scope.plot_8_3.x_expr_1: 1000*dim_of(_br_cos)
+Scope.plot_8_3.y_expr_1: _br_cos=\br_m01C_000
+Scope.plot_8_3.mode_1D_1_1: Line
+Scope.plot_8_3.mode_2D_1_1: xz(y)
+Scope.plot_8_3.color_1_1: 0
+Scope.plot_8_3.marker_1_1: 0
+Scope.plot_8_3.step_marker_1_1: 1
+Scope.plot_8_3.x_expr_2: 1000*dim_of(_br_sin)
+Scope.plot_8_3.y_expr_2: _br_sin=\br_m01S_000
+Scope.plot_8_3.mode_1D_2_1: Line
+Scope.plot_8_3.mode_2D_2_1: xz(y)
+Scope.plot_8_3.color_2_1: 7
+Scope.plot_8_3.marker_2_1: 0
+Scope.plot_8_3.step_marker_2_1: 1
+Scope.rows_in_column_4: 8
+
+
+Scope.plot_1_4.height: 100
+Scope.plot_1_4.grid_mode: 0
+Scope.plot_1_4.y_label: ' '
+Scope.plot_1_4.x_log: false
+Scope.plot_1_4.y_log: false
+Scope.plot_1_4.update_limits: true
+Scope.plot_1_4.palette: Green scale
+Scope.plot_1_4.bitShift: 0
+Scope.plot_1_4.bitClip: false
+Scope.plot_1_4.event: ops_done
+Scope.plot_1_4.num_expr: 1
+Scope.plot_1_4.num_shot: 1
+Scope.plot_1_4.ymin: 0
+Scope.plot_1_4.ymax: 100
+Scope.plot_1_4.title: 'Vloop alpha model (V)' //$shot
+Scope.plot_1_4.global_defaults: 14209
+Scope.plot_1_4.x_expr_1: dim_of(\mst_ops::vloop_alpha)*1000
+Scope.plot_1_4.y_expr_1: \mst_ops::vloop_alpha
+Scope.plot_1_4.mode_1D_1_1: Line
+Scope.plot_1_4.mode_2D_1_1: xz(y)
+Scope.plot_1_4.color_1_1: 0
+Scope.plot_1_4.marker_1_1: 0
+Scope.plot_1_4.step_marker_1_1: 1
+
+
+Scope.plot_2_4.height: 100
+Scope.plot_2_4.grid_mode: 0
+Scope.plot_2_4.x_log: false
+Scope.plot_2_4.y_log: false
+Scope.plot_2_4.update_limits: true
+Scope.plot_2_4.palette: Green scale
+Scope.plot_2_4.bitShift: 0
+Scope.plot_2_4.bitClip: false
+Scope.plot_2_4.event: ops_done
+Scope.plot_2_4.num_expr: 1
+Scope.plot_2_4.num_shot: 1
+Scope.plot_2_4.title: 'Pohm alpha model' //$shot
+Scope.plot_2_4.global_defaults: 65409
+Scope.plot_2_4.x_expr_1: dim_of(\mst_ops::pohm_alpha)*1000
+Scope.plot_2_4.y_expr_1: \mst_ops::pohm_alpha
+Scope.plot_2_4.mode_1D_1_1: Line
+Scope.plot_2_4.mode_2D_1_1: xz(y)
+Scope.plot_2_4.color_1_1: 0
+Scope.plot_2_4.marker_1_1: 0
+Scope.plot_2_4.step_marker_1_1: 1
+
+
+Scope.plot_3_4.height: 100
+Scope.plot_3_4.grid_mode: 0
+Scope.plot_3_4.x_log: false
+Scope.plot_3_4.y_log: false
+Scope.plot_3_4.update_limits: true
+Scope.plot_3_4.palette: Green scale
+Scope.plot_3_4.bitShift: 0
+Scope.plot_3_4.bitClip: false
+Scope.plot_3_4.num_expr: 1
+Scope.plot_3_4.num_shot: 1
+Scope.plot_3_4.ymin: 0
+Scope.plot_3_4.ymax: 8
+Scope.plot_3_4.title: 'Prad pyro 120T 105P(MW)' //$shot
+Scope.plot_3_4.global_defaults: 147329
+Scope.plot_3_4.x_expr_1: dim_of(\mst_ops::prad_pyro)*1000
+Scope.plot_3_4.y_expr_1: -smooth1d(\mst_ops::prad_pyro, 20)*1000
+Scope.plot_3_4.mode_1D_1_1: Line
+Scope.plot_3_4.mode_2D_1_1: xz(y)
+Scope.plot_3_4.color_1_1: 0
+Scope.plot_3_4.marker_1_1: 0
+Scope.plot_3_4.step_marker_1_1: 1
+
+
+Scope.plot_4_4.height: 100
+Scope.plot_4_4.grid_mode: 0
+Scope.plot_4_4.x_log: false
+Scope.plot_4_4.y_log: false
+Scope.plot_4_4.update_limits: true
+Scope.plot_4_4.palette: Green scale
+Scope.plot_4_4.bitShift: 0
+Scope.plot_4_4.bitClip: false
+Scope.plot_4_4.num_expr: 1
+Scope.plot_4_4.num_shot: 1
+Scope.plot_4_4.title: "Prad Pyro_30T_-15P (~MW)"//$shot
+Scope.plot_4_4.global_defaults: 196481
+Scope.plot_4_4.x_expr_1: 1000*dim_of(\mraw_ops::B30TM15P)
+Scope.plot_4_4.y_expr_1: smooth1d(\mraw_ops::B30TM15P,25)*9.6
+Scope.plot_4_4.mode_1D_1_1: Line
+Scope.plot_4_4.mode_2D_1_1: xz(y)
+Scope.plot_4_4.color_1_1: 0
+Scope.plot_4_4.marker_1_1: 0
+Scope.plot_4_4.step_marker_1_1: 1
+
+
+Scope.plot_5_4.height: 100
+Scope.plot_5_4.grid_mode: 0
+Scope.plot_5_4.x_log: false
+Scope.plot_5_4.y_log: false
+Scope.plot_5_4.update_limits: true
+Scope.plot_5_4.palette: Green scale
+Scope.plot_5_4.bitShift: 0
+Scope.plot_5_4.bitClip: false
+Scope.plot_5_4.num_expr: 1
+Scope.plot_5_4.num_shot: 1
+Scope.plot_5_4.title: 'Prad XUV_120T_105P (MW)' //$shot
+Scope.plot_5_4.global_defaults: 196481
+Scope.plot_5_4.x_expr_1: dim_of(\mst_ops::prad_xuv)*1000
+Scope.plot_5_4.y_expr_1: smooth1d(\mst_ops::prad_xuv,20)
+Scope.plot_5_4.mode_1D_1_1: Line
+Scope.plot_5_4.mode_2D_1_1: xz(y)
+Scope.plot_5_4.color_1_1: 0
+Scope.plot_5_4.marker_1_1: 0
+Scope.plot_5_4.step_marker_1_1: 1
+
+
+Scope.plot_6_4.height: 100
+Scope.plot_6_4.grid_mode: 0
+Scope.plot_6_4.x_log: false
+Scope.plot_6_4.y_log: false
+Scope.plot_6_4.update_limits: true
+Scope.plot_6_4.palette: Green scale
+Scope.plot_6_4.bitShift: 0
+Scope.plot_6_4.bitClip: false
+Scope.plot_6_4.event: ops_done
+Scope.plot_6_4.num_expr: 3
+Scope.plot_6_4.num_shot: 1
+Scope.plot_6_4.title: "BTPPS" //$shot
+Scope.plot_6_4.global_defaults: 65409
+Scope.plot_6_4.x_expr_1: dim_of(_btpps_demand)*1000
+Scope.plot_6_4.y_expr_1: _btpps_demand=\mraw_bt_pps::top.currents:demand/0.00039
+Scope.plot_6_4.mode_1D_1_1: Line
+Scope.plot_6_4.mode_2D_1_1: xz(y)
+Scope.plot_6_4.color_1_1: 1
+Scope.plot_6_4.marker_1_1: 0
+Scope.plot_6_4.step_marker_1_1: 1
+Scope.plot_6_4.x_expr_2: dim_of(_btpps_master)*1000
+Scope.plot_6_4.y_expr_2: _btpps_master=-\mraw_bt_pps::top.currents:master*5000
+Scope.plot_6_4.mode_1D_2_1: Line
+Scope.plot_6_4.mode_2D_2_1: xz(y)
+Scope.plot_6_4.color_2_1: 0
+Scope.plot_6_4.marker_2_1: 0
+Scope.plot_6_4.step_marker_2_1: 1
+Scope.plot_6_4.x_expr_3: dim_of(_ipri_r)*1000
+Scope.plot_6_4.y_expr_3: _ipri_r = \mraw_ops::bt_ipri_r*2500
+Scope.plot_6_4.mode_1D_3_1: Line
+Scope.plot_6_4.mode_2D_3_1: xz(y)
+Scope.plot_6_4.color_3_1: 7
+Scope.plot_6_4.marker_3_1: 0
+Scope.plot_6_4.step_marker_3_1: 1
+
+
+Scope.plot_7_4.height: 100
+Scope.plot_7_4.grid_mode: 0
+Scope.plot_7_4.x_log: false
+Scope.plot_7_4.y_log: false
+Scope.plot_7_4.update_limits: true
+Scope.plot_7_4.palette: Green scale
+Scope.plot_7_4.bitShift: 0
+Scope.plot_7_4.bitClip: false
+Scope.plot_7_4.num_expr: 2
+Scope.plot_7_4.num_shot: 1
+Scope.plot_7_4.ymax: 1
+Scope.plot_7_4.title: 'Neutron detector 2'//$shot
+Scope.plot_7_4.global_defaults: 196481
+Scope.plot_7_4.x_expr_1: dim_of(\mraw_misc::neutron_det)*1000
+Scope.plot_7_4.y_expr_1: -\mraw_misc::neutron_det
+Scope.plot_7_4.mode_1D_1_1: Noline
+Scope.plot_7_4.mode_2D_1_1: xz(y)
+Scope.plot_7_4.color_1_1: 0
+Scope.plot_7_4.marker_1_1: 5
+Scope.plot_7_4.step_marker_1_1: 1
+Scope.plot_7_4.x_expr_2: dim_of(\mraw_misc::neutron_det_2)*1000
+Scope.plot_7_4.y_expr_2: -\mraw_misc::neutron_det_2*10
+Scope.plot_7_4.mode_1D_2_1: Line
+Scope.plot_7_4.mode_2D_2_1: xz(y)
+Scope.plot_7_4.color_2_1: 3
+Scope.plot_7_4.marker_2_1: 0
+Scope.plot_7_4.step_marker_2_1: 1
+
+
+Scope.plot_8_4.height: 100
+Scope.plot_8_4.grid_mode: 0
+Scope.plot_8_4.x_log: false
+Scope.plot_8_4.y_log: false
+Scope.plot_8_4.update_limits: true
+Scope.plot_8_4.palette: Green scale
+Scope.plot_8_4.bitShift: 0
+Scope.plot_8_4.bitClip: false
+Scope.plot_8_4.num_expr: 1
+Scope.plot_8_4.num_shot: 1
+Scope.plot_8_4.ymin: -0.5
+Scope.plot_8_4.ymax: 0.5
+Scope.plot_8_4.title: 'Edge q'
+Scope.plot_8_4.global_defaults: 147329
+Scope.plot_8_4.x_expr_1: dim_of(\ip)*1e3
+Scope.plot_8_4.y_expr_1: _q_a = \btw/(2*\ip/.52)/1.5*.52
+Scope.plot_8_4.mode_1D_1_1: Line
+Scope.plot_8_4.mode_2D_1_1: xz(y)
+Scope.plot_8_4.color_1_1: 0
+Scope.plot_8_4.marker_1_1: 0
+Scope.plot_8_4.step_marker_1_1: 1
+
+Scope.vpane_1: 250
+Scope.vpane_2: 500
+Scope.vpane_3: 750
